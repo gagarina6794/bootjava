@@ -20,3 +20,15 @@ spring:
     basePath: /api
     defaultPageSize: 5
     returnBodyOnCreate: true
+
+  security:
+    user:
+      name: user
+      password: password
+      roles: USER
+
+logging:
+  level:
+    root: WARN
+    ru.javaops.bootjava: DEBUG
+    org.springframework.security.web.FilterChainProxy: DEBUG
