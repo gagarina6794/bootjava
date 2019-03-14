@@ -20,7 +20,6 @@ public class UserDetailsService implements org.springframework.security.core.use
     private UserRepository userRepository;
 
     @Override
-    @Transactional(readOnly = true)
     public UserDetails loadUserByUsername(final String email) {
         log.debug("Authenticating {}", email);
         Optional<User> optionalUser = userRepository.findByEmailIgnoreCase(email);
