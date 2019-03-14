@@ -4,6 +4,6 @@ VALUES ('trainer@gmail.com', 'Trainer_First', 'Trainer_Last', '{noop}trainer','l
        ('pupil@mail.ru', 'Pupil_First', 'Pupil_Last', '{noop}pupil','нырок:70 ,скорость:82 ,рефлексы:73');
 
 INSERT INTO USER_ROLE (ROLE, USER_ID)
-VALUES ('ROLE_USER', 1),
+VALUES ('ROLE_TRAINER', 1),
        ('ROLE_ADMIN', 2),
        ('ROLE_PUPIL', 3);
